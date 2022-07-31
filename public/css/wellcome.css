@@ -1,0 +1,94 @@
+
+/* Fonts Custom */
+@font-face {
+    font-family: 'MyriadPro-Bold';
+    src: url('../fonts/MyriadPro-Bold.otf');
+}
+
+html{
+    font-family: 'MyriadPro-Bold';
+}
+body{
+    background-image: url('../images/Welcome-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main{
+    padding: 40px 0;
+}
+.overlay{
+    display: none;
+}
+.marquee {
+    background: red;
+    padding: 10px 0;
+    color: #fff;
+    font-family: 'MyriadPro-Bold';
+}
+.marquee p{
+    font-size: 30px;
+    margin: 0 30px;
+}
+.overlay::before, .overlay::after {
+    background: linear-gradient(to right, red) !important;
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: var(--gradient-width);
+    z-index: 2;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+h1{
+    font-family: 'MyriadPro-Bold';
+    font-weight: 900;
+    text-align: center;
+    font-size: 150px;
+    color: red;
+    margin: -22px 0;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.coming-btn{
+    border: none;
+    outline: none;
+    font-size: 45px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background: #e9a8a8;
+    color: #fff;
+    font-family: 'MyriadPro-Bold';
+    margin: 20px 0;
+}
+
+.image{
+    width: 100%;
+}
+.image img{
+    width: 100%;
+}
+
+
+.side-img-1{
+    position: absolute;
+    left: 0;
+    top: 200px;
+}
+.side-img-1 img{
+    width: 100px;
+}
+.side-img-2{
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+}
+.side-img-2 img{
+    width: 100px;
+}
